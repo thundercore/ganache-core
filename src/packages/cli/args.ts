@@ -1,4 +1,5 @@
 import yargs from "yargs";
+import { DefaultFlavor } from "@ganache/flavors";
 
 export default function (version: string, isDocker: boolean) {
   return yargs
@@ -78,6 +79,12 @@ export default function (version: string, isDocker: boolean) {
       string: true,
       describe: "Comma-separated list of accounts or indices to unlock",
       demandOption: false
+    })
+    .option("flavor", {
+      group: "Chain:",
+      describe: "Specify which flavor of Ganache you'd like to use",
+      type: "string",
+      default: DefaultFlavor
     })
     .option("k", {
       group: "Chain:",

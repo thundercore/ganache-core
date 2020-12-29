@@ -53,6 +53,7 @@
     "google-closure-compiler": "20201102.0.1"
   },
   "dependencies": {
+    "@ganache/flavors": "0.1.0",
     "@types/node": "14.14.6",
     "ethereumjs-util": "^7.0.7"
   }
