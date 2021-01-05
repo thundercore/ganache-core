@@ -7,7 +7,9 @@
     "": {
       "version": "2.13.1",
       "bundleDependencies": [
-        "keccak"
+        "keccak",
+        "node-addon-api",
+        "node-gyp-build"
       ],
       "license": "MIT",
       "dependencies": {
@@ -22,10 +24,10 @@
         "ethereumjs-abi": "0.6.8",
         "ethereumjs-account": "3.0.0",
         "ethereumjs-block": "2.2.2",
-        "ethereumjs-common": "1.5.0",
+        "ethereumjs-common": "github:thundercore/ethereumjs-common#v1.5.0-tt",
         "ethereumjs-tx": "2.1.2",
         "ethereumjs-util": "6.2.1",
-        "ethereumjs-vm": "4.2.0",
+        "ethereumjs-vm": "github:thundercore/ethereumjs-vm#v4.2.0-tt",
         "ethereumjs-wallet": "0.6.5",
         "heap": "0.2.6",
         "keccak": "3.0.1",
@@ -3193,9 +3195,9 @@
       "hasInstallScript": true
     },
     "node_modules/core-js-pure": {
-      "version": "3.6.5",
-      "resolved": "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.6.5.tgz",
-      "integrity": "sha512-lacdXOimsiD0QyNf9BC/mxivNJ/ybBGJXQFKzRekp1WTHoVUWsUHEn+2T8GJAzzIhyOuXA+gOxCVN3l+5PLPUA==",
+      "version": "3.8.2",
+      "resolved": "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.8.2.tgz",
+      "integrity": "sha512-v6zfIQqL/pzTVAbZvYUozsxNfxcFb6Ks3ZfEbuneJl3FW9Jb8F6vLWB6f+qTmAu72msUdyb84V8d/yBFf7FNnw==",
       "hasInstallScript": true,
       "funding": {
         "type": "opencollective",
@@ -5188,9 +5190,9 @@
       }
     },
     "node_modules/ethashjs/node_modules/ethereumjs-util": {
-      "version": "7.0.6",
-      "resolved": "https://registry.npmjs.org/ethereumjs-util/-/ethereumjs-util-7.0.6.tgz",
-      "integrity": "sha512-E9aJ9W7XZkcBqIblfstBU+0nGSjF9Dz/Ps7s1NTFOgDZM8pwD+nX1P1GBJeSqB6Osxhj2UtuxVCqjvmrj2svzw==",
+      "version": "7.0.7",
+      "resolved": "https://registry.npmjs.org/ethereumjs-util/-/ethereumjs-util-7.0.7.tgz",
+      "integrity": "sha512-vU5rtZBlZsgkTw3o6PDKyB8li2EgLavnAbsKcfsH2YhHH1Le+PP8vEiMnAnvgc1B6uMoaM5GDCrVztBw0Q5K9g==",
       "dependencies": {
         "@types/bn.js": "^4.11.3",
         "bn.js": "^5.1.2",
@@ -5479,8 +5481,8 @@
     },
     "node_modules/ethereumjs-common": {
       "version": "1.5.0",
-      "resolved": "https://registry.npmjs.org/ethereumjs-common/-/ethereumjs-common-1.5.0.tgz",
-      "integrity": "sha512-SZOjgK1356hIY7MRj3/ma5qtfr/4B5BL+G4rP/XSMYr2z1H5el4RX5GReYCKmQmYI/nSBmRnwrZ17IfHuG0viQ=="
+      "resolved": "git+ssh://git@github.com/thundercore/ethereumjs-common.git#250e2901398f307d01f6fae6a704f670fa2cc089",
+      "license": "MIT"
     },
     "node_modules/ethereumjs-tx": {
       "version": "2.1.2",
@@ -5507,8 +5509,8 @@
     },
     "node_modules/ethereumjs-vm": {
       "version": "4.2.0",
-      "resolved": "https://registry.npmjs.org/ethereumjs-vm/-/ethereumjs-vm-4.2.0.tgz",
-      "integrity": "sha512-X6qqZbsY33p5FTuZqCnQ4+lo957iUJMM6Mpa6bL4UW0dxM6WmDSHuI4j/zOp1E2TDKImBGCJA9QPfc08PaNubA==",
+      "resolved": "git+ssh://git@github.com/thundercore/ethereumjs-vm.git#48b0810cd7113a1d7e176e8e468e26fd9cd03762",
+      "license": "MPL-2.0",
       "dependencies": {
         "async": "^2.1.2",
         "async-eventemitter": "^0.2.2",
@@ -5516,7 +5518,7 @@
         "ethereumjs-account": "^3.0.0",
         "ethereumjs-block": "^2.2.2",
         "ethereumjs-blockchain": "^4.0.3",
-        "ethereumjs-common": "^1.5.0",
+        "ethereumjs-common": "thundercore/ethereumjs-common.git#v1.5.0-tt",
         "ethereumjs-tx": "^2.1.2",
         "ethereumjs-util": "^6.2.0",
         "fake-merkle-patricia-tree": "^1.0.1",
@@ -19498,9 +19500,9 @@
       "integrity": "sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg=="
     },
     "core-js-pure": {
-      "version": "3.6.5",
-      "resolved": "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.6.5.tgz",
-      "integrity": "sha512-lacdXOimsiD0QyNf9BC/mxivNJ/ybBGJXQFKzRekp1WTHoVUWsUHEn+2T8GJAzzIhyOuXA+gOxCVN3l+5PLPUA=="
+      "version": "3.8.2",
+      "resolved": "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.8.2.tgz",
+      "integrity": "sha512-v6zfIQqL/pzTVAbZvYUozsxNfxcFb6Ks3ZfEbuneJl3FW9Jb8F6vLWB6f+qTmAu72msUdyb84V8d/yBFf7FNnw=="
     },
     "core-util-is": {
       "version": "1.0.2",
@@ -21275,9 +21277,9 @@
           }
         },
         "ethereumjs-util": {
-          "version": "7.0.6",
-          "resolved": "https://registry.npmjs.org/ethereumjs-util/-/ethereumjs-util-7.0.6.tgz",
-          "integrity": "sha512-E9aJ9W7XZkcBqIblfstBU+0nGSjF9Dz/Ps7s1NTFOgDZM8pwD+nX1P1GBJeSqB6Osxhj2UtuxVCqjvmrj2svzw==",
+          "version": "7.0.7",
+          "resolved": "https://registry.npmjs.org/ethereumjs-util/-/ethereumjs-util-7.0.7.tgz",
+          "integrity": "sha512-vU5rtZBlZsgkTw3o6PDKyB8li2EgLavnAbsKcfsH2YhHH1Le+PP8vEiMnAnvgc1B6uMoaM5GDCrVztBw0Q5K9g==",
           "requires": {
             "@types/bn.js": "^4.11.3",
             "bn.js": "^5.1.2",
@@ -21570,9 +21572,8 @@
       }
     },
     "ethereumjs-common": {
-      "version": "1.5.0",
-      "resolved": "https://registry.npmjs.org/ethereumjs-common/-/ethereumjs-common-1.5.0.tgz",
-      "integrity": "sha512-SZOjgK1356hIY7MRj3/ma5qtfr/4B5BL+G4rP/XSMYr2z1H5el4RX5GReYCKmQmYI/nSBmRnwrZ17IfHuG0viQ=="
+      "version": "git+ssh://git@github.com/thundercore/ethereumjs-common.git#250e2901398f307d01f6fae6a704f670fa2cc089",
+      "from": "ethereumjs-common@github:thundercore/ethereumjs-common#v1.5.0-tt"
     },
     "ethereumjs-tx": {
       "version": "2.1.2",
@@ -21598,9 +21599,8 @@
       }
     },
     "ethereumjs-vm": {
-      "version": "4.2.0",
-      "resolved": "https://registry.npmjs.org/ethereumjs-vm/-/ethereumjs-vm-4.2.0.tgz",
-      "integrity": "sha512-X6qqZbsY33p5FTuZqCnQ4+lo957iUJMM6Mpa6bL4UW0dxM6WmDSHuI4j/zOp1E2TDKImBGCJA9QPfc08PaNubA==",
+      "version": "git+ssh://git@github.com/thundercore/ethereumjs-vm.git#48b0810cd7113a1d7e176e8e468e26fd9cd03762",
+      "from": "ethereumjs-vm@github:thundercore/ethereumjs-vm#v4.2.0-tt",
       "requires": {
         "async": "^2.1.2",
         "async-eventemitter": "^0.2.2",
@@ -21608,7 +21608,7 @@
         "ethereumjs-account": "^3.0.0",
         "ethereumjs-block": "^2.2.2",
         "ethereumjs-blockchain": "^4.0.3",
-        "ethereumjs-common": "^1.5.0",
+        "ethereumjs-common": "thundercore/ethereumjs-common.git#v1.5.0-tt",
         "ethereumjs-tx": "^2.1.2",
         "ethereumjs-util": "^6.2.0",
         "fake-merkle-patricia-tree": "^1.0.1",
